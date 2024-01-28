@@ -1,27 +1,29 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["src/*"]
-    },
-    "target": "ESNext",
-    "useDefineForClassFields": true,
+    "outDir": "./dist",
+    "declaration": true,
     "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
+    "target": "ES2019",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "moduleResolution": "Bundler",
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "types": [
       "vitest/importMeta"
-     ]
+    ]
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*"
+  ]
 }

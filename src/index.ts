@@ -1,0 +1,1 @@
+export { isIPAddress, isShortened, isHyphened, isFakingDestination, isSecretLike, isTyposquatting, isSuspiciousTLD } from './detectionMethods'
